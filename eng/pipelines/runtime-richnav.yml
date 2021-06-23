@@ -39,6 +39,7 @@ jobs:
       - windows_x64
     jobParameters:
       enableRichCodeNavigation: true
+      richCodeNavigationArtifactsUpload: true
       richCodeNavigationEnvironment: "production"
       richCodeNavigationLanguage: "csharp"
       timeoutInMinutes: 240
@@ -52,6 +53,7 @@ jobs:
       - windows_x64
     jobParameters:
       enableRichCodeNavigation: true
+      richCodeNavigationArtifactsUpload: true
       nameSuffix: Mono
       richCodeNavigationEnvironment: "production"
       richCodeNavigationLanguage: "csharp,cpp"

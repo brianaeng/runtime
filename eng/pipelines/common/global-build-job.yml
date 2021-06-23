@@ -29,6 +29,7 @@ parameters:
   extraStepsTemplate: ''
   extraStepsParameters: {}
   enableRichCodeNavigation: false
+  richCodeNavigationArtifactsUpload: false
   richCodeNavigationLanguage: 'csharp'
   richCodeNavigationEnvironment: 'production'
 
@@ -47,6 +48,7 @@ jobs:
     workspace:
       clean: all
     enableRichCodeNavigation: ${{ parameters.enableRichCodeNavigation }}
+    richCodeNavigationArtifactsUpload: ${{ parameters.richCodeNavigationArtifactsUpload }}
     richCodeNavigationLanguage: ${{ parameters.richCodeNavigationLanguage }}
     richCodeNavigationEnvironment: ${{ parameters.richCodeNavigationEnvironment }}
 
